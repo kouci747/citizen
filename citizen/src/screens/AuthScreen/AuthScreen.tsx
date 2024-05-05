@@ -5,7 +5,7 @@ import * as Styling from './AuthScreen-styling';
 const AuthScreen = () => {
   return (
     <Styling.CustomView>
-      <Styling.BigText>AuthScreen</Styling.BigText>
+      <Styling.BigText>Authentication Screen</Styling.BigText>
     </Styling.CustomView>
   );
 };
