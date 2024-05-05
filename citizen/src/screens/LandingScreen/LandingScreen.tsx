@@ -2,17 +2,20 @@ import {View, Text} from 'react-native';
 import React from 'react';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {useNavigation} from '@react-navigation/native';
+import * as Styling from './LandingScreen-styling';
 
-export default function LandingScreen() {
+const LandingScreen = () => {
   const navigation = useNavigation();
 
   return (
-    <View>
-      <Text>LandingScreen</Text>
+    <Styling.CustomView>
+      <Styling.BigText>LandingScreen</Styling.BigText>
       <TouchableOpacity
         onPress={() => navigation.navigate('AuthScreenNav' as never)}>
-        <Text>Go to Auth</Text>
+        <Styling.BigText>Go to Auth</Styling.BigText>
       </TouchableOpacity>
-    </View>
+    </Styling.CustomView>
   );
-}
+};
+
+export default LandingScreen;

@@ -1,10 +1,13 @@
 import {View, Text} from 'react-native';
 import React from 'react';
+import * as Styling from './AuthScreen-styling';
 
-export default function AuthScreen() {
+const AuthScreen = () => {
   return (
-    <View>
-      <Text>AuthScreen</Text>
-    </View>
+    <Styling.CustomView>
+      <Styling.BigText>AuthScreen</Styling.BigText>
+    </Styling.CustomView>
   );
-}
+};
+
+export default AuthScreen;
